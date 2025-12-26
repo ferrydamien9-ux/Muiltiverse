@@ -1,21 +1,7 @@
-const lines = [
-    "LOG: Initializing Ghost-Shell...",
-    "LOG: Checking GitHub Source Integrity...",
-    "LOG: No Binaries Detected. Pure Source Mode Active.",
-    "LOG: System Ready."
-];
-
-let index = 0;
-const output = document.getElementById('output');
-
-function bootSequence() {
-    if (index < lines.length) {
-        let p = document.createElement('p');
-        p.textContent = lines[index];
-        p.style.color = "#00ff41";
-        output.appendChild(p);
-        index++;
-        setTimeout(bootSequence, 600);
-    }
-}
-bootSequence();
+<div id="output">
+    <p class="line">[SYSTEM] Ghost-Shell Mainframe Active</p>
+    <p class="line">------------------------------------</p>
+    <p class="line">BRANCH ACCESS:</p>
+    <p class="line"> > <a href="https://github.com/USER/REPO/tree/byte-size" style="color: cyan;">[PROJ_02] BYTE-SIZE (C)</a></p>
+    <p class="line"> > <a href="https://github.com/USER/REPO/tree/signal-x" style="color: cyan;">[PROJ_03] SIGNAL-X (C#)</a></p>
+</div>
